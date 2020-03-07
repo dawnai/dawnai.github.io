@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-03-07T08:28:25.821Z</updated>
+    <updated>2020-03-07T09:10:47.291Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -16,10 +16,8 @@
         <link href="https://dawnai.Github.io/post/who-is-dawn/">
         </link>
         <updated>2020-03-05T13:37:37.000Z</updated>
-        <summary type="html"><![CDATA[<p>Dawn is a boy,他热爱计算机，擅长C语言，是这座网站的“主人”，也是这个网站的“建设者”</p>
-<p>这就是他：</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Dawn is a boy,他热爱计算机，擅长C语言，是这座网站的“主人”，也是这个网站的“建设者”</p>
+        <content type="html"><![CDATA[<!-- more -->
+<p>Dawn is a boy,他热爱计算机，擅长C语言，是这座网站的“主人”，也是这个网站的“建设者”</p>
 <p>这就是他：</p>
 <!-- more -->
 <!-- more -->
