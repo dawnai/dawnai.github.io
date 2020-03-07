@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-03-07T09:10:47.291Z</updated>
+    <updated>2020-03-07T14:35:46.826Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[每日的英语练习]]></title>
+        <id>https://dawnai.Github.io/post/mei-ri-de-ying-yu-lian-xi/</id>
+        <link href="https://dawnai.Github.io/post/mei-ri-de-ying-yu-lian-xi/">
+        </link>
+        <updated>2020-03-07T14:23:15.000Z</updated>
+        <summary type="html"><![CDATA[<p>不知不觉，每晚7点的英语“time”都已经过了4天了，Maud每次都很细心地为Dawn讲解每个单词的含义<br>
+以及需要注意和延伸的知识点。<br>
+昨天由于Dawn拔智齿，疼了一天，导致今天也没有心情去学习，今天的听写也是异常的糟糕……</p>
+<figure data-type="image" tabindex="1"><img src="https://dawnai.Github.io/post-images/1583591346530.jpg" alt="" loading="lazy"></figure>
+<p>虽然Maud<br>
+一直鼓励Dawn今天还不错，比想象中的要好，但是Dawn知道，自己的状态还不够，也许过了今天，明天<br>
+牙齿就不那么疼了，倒时候就可以回归理想状态了！<br>
+最后再夸一下Maud的细心和拍照技术啦~<br>
+<img src="https://dawnai.Github.io/post-images/1583591491267.jpg" alt="" loading="lazy"></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>不知不觉，每晚7点的英语“time”都已经过了4天了，Maud每次都很细心地为Dawn讲解每个单词的含义<br>
+以及需要注意和延伸的知识点。<br>
+昨天由于Dawn拔智齿，疼了一天，导致今天也没有心情去学习，今天的听写也是异常的糟糕……</p>
+<figure data-type="image" tabindex="1"><img src="https://dawnai.Github.io/post-images/1583591346530.jpg" alt="" loading="lazy"></figure>
+<p>虽然Maud<br>
+一直鼓励Dawn今天还不错，比想象中的要好，但是Dawn知道，自己的状态还不够，也许过了今天，明天<br>
+牙齿就不那么疼了，倒时候就可以回归理想状态了！<br>
+最后再夸一下Maud的细心和拍照技术啦~<br>
+<img src="https://dawnai.Github.io/post-images/1583591491267.jpg" alt="" loading="lazy"></p>
+<!-- more -->
+<!-- more -->
+<!-- more -->
+<figure data-type="image" tabindex="2"><img src="https://dawnai.Github.io/post-images/1583591505334.jpg" alt="" loading="lazy"></figure>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Who is Dawn？]]></title>
         <id>https://dawnai.Github.io/post/who-is-dawn/</id>
