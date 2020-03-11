@@ -2,14 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-03-10T10:25:45.123Z</updated>
+    <updated>2020-03-11T01:56:49.462Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
-    <subtitle>属于黎明和阿娟的温暖小屋</subtitle>
+    <subtitle>欢迎来到黎明和阿娟的温暖小屋</subtitle>
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[发现一个神奇的网站]]></title>
+        <id>https://dawnai.Github.io/post/lBnz2eiS_/</id>
+        <link href="https://dawnai.Github.io/post/lBnz2eiS_/">
+        </link>
+        <updated>2020-03-11T01:40:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>这个网站可以生成“举牌小人”的图片，</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这个网站可以生成“举牌小人”的图片，</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[牙疼ing]]></title>
         <id>https://dawnai.Github.io/post/ya-teng-ing/</id>
