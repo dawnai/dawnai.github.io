@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-03-13T13:33:58.106Z</updated>
+    <updated>2020-03-13T13:41:51.322Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[喜提90分！]]></title>
+        <id>https://dawnai.Github.io/post/J7URMffP7/</id>
+        <link href="https://dawnai.Github.io/post/J7URMffP7/">
+        </link>
+        <updated>2020-03-13T13:35:33.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[夕阳之歌——梅艳芳]]></title>
         <id>https://dawnai.Github.io/post/mei/</id>
