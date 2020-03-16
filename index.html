@@ -1,274 +1,355 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Dawn &amp;&amp; Maud</title>
-<meta name="description" content="欢迎来到黎明和阿娟的温暖小屋" />
-<link rel="shortcut icon" href="https://dawnai.Github.io/favicon.ico?v=1584258782871">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+<link rel="shortcut icon" href="https://dawnai.Github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://dawnai.Github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://dawnai.Github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Dawn &amp;&amp; Maud - Atom Feed" href="https://dawnai.Github.io/atom.xml">
 
+    
 
+  <meta name="description" content="欢迎来到黎明和阿娟的温暖小屋" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-  </head>
-  <body>
-    <div class="main px-4 flex flex-col lg:flex-row">
-      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
-  <div class="lg:sticky top-0">
-    <div class="sidebar-content">
-      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
-        <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="https://dawnai.Github.io">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://dawnai.Github.io/images/avatar.png?v=1584258782871" alt="">
-        </a>
-        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Dawn &amp;&amp; Maud</h1>
-      </div>
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        回到首页
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        查看全文
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+    <a href="https://dawnai.Github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
+</div>
+
+    <div class="max-w-4xl w-full mx-auto ">
       
-        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
-          <p class="my-4 text-gray-600 font-light hidden lg:block">
-            欢迎来到黎明和阿娟的温暖小屋
-          </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
+        <header class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
+  <div class="flex-1 order-2 md:order-1 md:pr-16">
+    <div class="text-4xl font-bold text-center md:text-left">
+      Dawn &amp;&amp; Maud
+    </div>
+    <div class="text-xl text-gray-500 mt-4 text-center md:text-left">
+      欢迎来到黎明和阿娟的温暖小屋
+    </div>
+    
+      <div class="mt-8 text-center md:text-left">
+        <a
+          href="https://weibo.com/5453686538/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo&amp;is_all=1" 
+          arget="_blank"
+          class="text-sm bg-yellow-50 dark:bg-indigo-500 dark:text-gray-700 font-semibold px-4 py-2 inline-block yellow-btn transition-fast rounded"
+        >I want you</a>
+      </div>
+    
+    
+      <div class="mt-8 flex items-center">
+        
+          <div class="text-gray-500 mr-2">
+            Call me 👉
           </div>
-        </div>
-      
-    </div>
-  </div>
-</div>
-
-<div class="menu-container">
-  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
-  <div>
-    
-      
-        <a href="/" class="menu" style="animation-delay: 0s">
-          回到首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu" style="animation-delay: 0.2s">
-          查看全文
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu" style="animation-delay: 0.4s">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" style="animation-delay: 0.6000000000000001s">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="site-footer">
-    <div class="py-4 text-gray-700">永远期待美好的事情即将发生</div>
-    <a class="rss" href="https://dawnai.Github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-<div class="mask" onclick="closeMenu()">
-</div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="latest-article text-lg text-gray-700 mb-8">
-          <i class="ri-article-line"></i>
-          最新文章
-        </h2>
         
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-    
-      <a href="https://dawnai.Github.io/post/who-is-dawn/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/who-is-dawn.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/who-is-dawn/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">Who is Dawn？</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+        
+          
+            
+              <div class="relative mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 transition-fast dark:hover:bg-gray-600 wechat">
+                <i class="ri-wechat-line"></i>
+                <img src="\media\images\custom-wechat.jpg" alt="" class="absolute left-0 w-32" style="max-width: initial; top: 100%;" >
+              </div>
+            
+          
+        
+          
+            
+              <a href="mailto:dawnai@163.com" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-mail-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+        
+          
+            
+              <a href="https://weibo.com/5453686538/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo&amp;is_all=1" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-weibo-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://www.zhihu.com/people/snakeggggg" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-zhihu-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <a href="www.1299340314@qq.com" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-qq-line"></i>
+              </a>
+            
+          
         
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-05 / 1 min read</div>
-    </div>
-  </section>
+    
+  </div>
+  <div class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
+    <img class="rounded-full object-cover" src="https://dawnai.Github.io/images/avatar.png?v=1584324116145" alt="Dawn &amp;&amp; Maud" width="100%" height="100%">
+  </div>
+</header>
+      
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-    
-      <a href="https://dawnai.Github.io/post/who-is-maud/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/who-is-maud.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/who-is-maud/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">Who is Maud？</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
         
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-05 / 1 min read</div>
-    </div>
-  </section>
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+      <i class="ri-star-line text-orange-200 absolute text-2xl left-0 ml-1 rotate-90"></i>
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/who-is-dawn/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Who is Dawn？
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-05</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+Dawn is a boy,他热爱计算机，擅长C语言，是这座网站的“主人”，也是这个网站的“建设者”
+这就是他：
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-    
-      <a href="https://dawnai.Github.io/post/lqPQb1Oyp/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/lqPQb1Oyp.jpg'">
-        </div>
+
+
+...
+      </div>
+      <a href="https://dawnai.Github.io/post/who-is-dawn/" class="btn">
+        Read more
       </a>
+    </div>
     
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/lqPQb1Oyp/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">疫情心得</h2>
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/who-is-dawn.jpg" alt="Who is Dawn？">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+      <i class="ri-star-line text-orange-200 absolute text-2xl left-0 ml-1 rotate-90"></i>
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/who-is-maud/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Who is Maud？
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-05</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+
+
+
+Maud 是世界上最可爱，最善良，最有趣的“小公举”❤️
+
+这个网站就是为Maud而创建的，用来记录我们的点点滴滴……
+
+
+
+
+
+...
+      </div>
+      <a href="https://dawnai.Github.io/post/who-is-maud/" class="btn">
+        Read more
       </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/who-is-maud.jpg" alt="Who is Maud？">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/lqPQb1Oyp/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          疫情心得
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-15</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>疫情心得<br>
 现在距离原本正常开学时间已经过去13天了，2020给大家开了很多“玩笑”，发生了很多预料之外的事情，比如现在全球都在面临的“新冠肺炎”。</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-15 / 6 min read</div>
+      <a href="https://dawnai.Github.io/post/lqPQb1Oyp/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/lqPQb1Oyp.jpg" alt="疫情心得">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${3 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://dawnai.Github.io/post/love/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/love.jfif'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/love/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">关于爱情</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/love/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          关于爱情
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-14</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>不知道Dawn为什么突然想写这样一篇文章，可能是因为疫情原因，太久没有见到Maud，很想她<br>
 很担心Maud，与其说是担心，不如说是Dawn自己不自信吧，有时候总是忍不住去想Maud的Former，想着Maud是不是在和他聊天之类的……</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-14 / 2 min read</div>
+      <a href="https://dawnai.Github.io/post/love/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/love.jfif" alt="关于爱情">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${4 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://dawnai.Github.io/post/xi/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/xi.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/xi/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">喜提90分！</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/xi/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          喜提90分！
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-13</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        啥都不说，就这个标题，就足够Dawn兴奋好一会！
+
+今天Dawn的听写测试，第一次取得了这么高的分数，这和往常的65分完全不是一个概念，兴奋之余，Dawn还更加坚定了每日英语的目标，每天“复习”英语是重中之中，Dawn以前都是在意新学习的单...
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-13 / 1 min read</div>
+      <a href="https://dawnai.Github.io/post/xi/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/xi.jpg" alt="喜提90分！">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${5 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://dawnai.Github.io/post/mei/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/mei.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/mei/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">夕阳之歌——梅艳芳</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/mei/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          夕阳之歌——梅艳芳
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-12</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>今天想给Maud分享一首歌，这首歌就是标题所写的——《夕阳之歌》，想必Maud之前也曾听过吧<br>
 不过今天<br>
 还是想和你聊聊这首歌。</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-12 / 4 min read</div>
+      <a href="https://dawnai.Github.io/post/mei/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/mei.jpg" alt="夕阳之歌——梅艳芳">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${6 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://dawnai.Github.io/post/lBnz2eiS_/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/lBnz2eiS_.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/lBnz2eiS_/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">发现一个神奇的网站</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/lBnz2eiS_/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          发现一个神奇的网站
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-11</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>这个网站可以生成“举牌小人”的图片，</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-11 / 1 min read</div>
+      <a href="https://dawnai.Github.io/post/lBnz2eiS_/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/lBnz2eiS_.jpg" alt="发现一个神奇的网站">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${7 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://dawnai.Github.io/post/ya-teng-ing/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/ya-teng-ing.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/ya-teng-ing/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">牙疼ing</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/ya-teng-ing/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          牙疼ing
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-10</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>Dawn自从拔牙之后，精神就一直处于萎靡不振的状态，虽然已经过去三天了，但是情况依然很差，今早还出现了伤口开裂的情况😱<br>
 但是Dawn感觉是昨晚睡觉的姿势不对，躺着睡的时候，不小心将右边的牙龈给按压了。不然今早就不会出现开裂现象。</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-10 / 3 min read</div>
+      <a href="https://dawnai.Github.io/post/ya-teng-ing/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/ya-teng-ing.jpg" alt="牙疼ing">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${8 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://dawnai.Github.io/post/mei-ri-de-ying-yu-lian-xi/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/mei-ri-de-ying-yu-lian-xi.png'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/mei-ri-de-ying-yu-lian-xi/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">每日的英语练习</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/mei-ri-de-ying-yu-lian-xi/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          每日的英语练习
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-07</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>不知不觉，每晚7点的英语“time”都已经过了4天了，Maud每次都很细心地为Dawn讲解每个单词的含义<br>
 以及需要注意和延伸的知识点。<br>
 昨天由于Dawn拔智齿，疼了一天，导致今天也没有心情去学习，今天的听写也是异常的糟糕……</p>
@@ -280,139 +361,48 @@
 <img src="https://dawnai.Github.io/post-images/1583591491267.jpg" alt="" loading="lazy"></p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-07 / 1 min read</div>
+      <a href="https://dawnai.Github.io/post/mei-ri-de-ying-yu-lian-xi/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/mei-ri-de-ying-yu-lian-xi.png" alt="每日的英语练习">
+    
+  </div>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${9 * 0.2}s` }">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
     
-      <a href="https://dawnai.Github.io/post/huo-che-shang-de-mei-zhuang/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://dawnai.Github.io/post-images/huo-che-shang-de-mei-zhuang.png'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://dawnai.Github.io/post/huo-che-shang-de-mei-zhuang/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">火车上的“美妆”</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://dawnai.Github.io/post/huo-che-shang-de-mei-zhuang/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          火车上的“美妆”
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-05</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>这是一次回家旅行</p>
 
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-03-05 / 1 min read</div>
+      <a href="https://dawnai.Github.io/post/huo-che-shang-de-mei-zhuang/" class="btn">
+        Read more
+      </a>
     </div>
-  </section>
-
-        <div class="read-more">
-          
-        </div>
-        <div class="index-page">
-          <div class="pagination-container animated fadeIn">
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://dawnai.Github.io/post-images/huo-che-shang-de-mei-zhuang.png" alt="火车上的“美妆”">
+    
+  </div>
   
-  
-</div>
-
-        </div>
       </div>
+
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  永远期待美好的事情即将发生
+</footer>
+
     </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://dawnai.Github.io/media/scripts/main.js"></script>
+</body>
 
-    <script src="https://dawnai.Github.io/media/prism.js"></script>  
-<script>
-
-Prism.highlightAll()
-let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach((link, index) => {
-    let section = document.getElementById(decodeURI(link.hash).substring(1));
-    let nextSection = null
-    if (mainNavLinks[index + 1]) {
-      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-    }
-    if (section.offsetTop <= fromTop) {
-      if (nextSection) {
-        if (nextSection.offsetTop > fromTop) {
-          link.classList.add("current");
-        } else {
-          link.classList.remove("current");    
-        }
-      } else {
-        link.classList.add("current");
-      }
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target
-          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
-          lazyImage.classList.remove("lazy")
-          lazyImageObserver.unobserve(lazyImage)
-        }
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage)
-    })
-  } else {
-    // Possibly fall back to a more compatible method here
-  }
-});
-
-const menuContainer = document.querySelector('.menu-container')
-const menus = document.querySelectorAll('.menu-container .menu')
-const mask = document.querySelector('.mask')
-const contentWrapper = document.querySelector('.content-wrapper')
-const latestArticle = document.querySelector('.latest-article')
-const readMore = document.querySelector('.read-more')
-const indexPage = document.querySelector('.index-page')
-
-const isHome = location.pathname === '/'
-if (latestArticle) {
-  latestArticle.style.display = isHome ? 'block' : 'none'
-  readMore.style.display = isHome ? 'block' : 'none'
-  indexPage.style.display = isHome ? 'none' : 'block'
-}
-
-const openMenu = () => {
-  menuContainer.classList.add('open')
-  menus.forEach(menu => {
-    menu.classList.add('animated', 'fadeInLeft')
-  })
-  mask.classList.add('open')
-  contentWrapper.classList.add('is-second')
-}
-
-const closeMenu = () => {
-  menuContainer.classList.remove('open')
-  menus.forEach(menu => {
-    menu.classList.remove('animated', 'fadeInLeft')
-  })
-  mask.classList.remove('open')
-  contentWrapper.classList.remove('is-second')
-}
-</script>
-  
-  </body>
 </html>
