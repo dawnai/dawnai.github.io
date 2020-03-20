@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-03-19T13:42:57.912Z</updated>
+    <updated>2020-03-20T03:31:21.093Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[数组做参数问题]]></title>
+        <id>https://dawnai.Github.io/post/7qHZ4itZh/</id>
+        <link href="https://dawnai.Github.io/post/7qHZ4itZh/">
+        </link>
+        <updated>2020-03-20T03:15:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>数组做参数，会退化为指针，因为之前我也曾经了解过这个，数组其实是特殊的指针</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>数组做参数，会退化为指针，因为之前我也曾经了解过这个，数组其实是特殊的指针</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[数据排序技巧——冒泡法和选择法]]></title>
         <id>https://dawnai.Github.io/post/MbS3WujqE/</id>
@@ -101,19 +112,6 @@
         <summary type="html"><![CDATA[<p>这个网站可以生成“举牌小人”的图片，</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>这个网站可以生成“举牌小人”的图片，</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[牙疼ing]]></title>
-        <id>https://dawnai.Github.io/post/ya-teng-ing/</id>
-        <link href="https://dawnai.Github.io/post/ya-teng-ing/">
-        </link>
-        <updated>2020-03-10T08:27:07.000Z</updated>
-        <summary type="html"><![CDATA[<p>Dawn自从拔牙之后，精神就一直处于萎靡不振的状态，虽然已经过去三天了，但是情况依然很差，今早还出现了伤口开裂的情况😱<br>
-但是Dawn感觉是昨晚睡觉的姿势不对，躺着睡的时候，不小心将右边的牙龈给按压了。不然今早就不会出现开裂现象。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Dawn自从拔牙之后，精神就一直处于萎靡不振的状态，虽然已经过去三天了，但是情况依然很差，今早还出现了伤口开裂的情况😱<br>
-但是Dawn感觉是昨晚睡觉的姿势不对，躺着睡的时候，不小心将右边的牙龈给按压了。不然今早就不会出现开裂现象。</p>
 ]]></content>
     </entry>
 </feed>
