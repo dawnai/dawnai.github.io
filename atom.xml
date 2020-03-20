@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-03-20T03:31:21.093Z</updated>
+    <updated>2020-03-20T10:23:56.269Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[原来这一天真的来了]]></title>
+        <id>https://dawnai.Github.io/post/gYD2u18EO/</id>
+        <link href="https://dawnai.Github.io/post/gYD2u18EO/">
+        </link>
+        <updated>2020-03-20T09:56:57.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[数组做参数问题]]></title>
         <id>https://dawnai.Github.io/post/7qHZ4itZh/</id>
@@ -101,17 +108,6 @@
         <content type="html"><![CDATA[<p>今天想给Maud分享一首歌，这首歌就是标题所写的——《夕阳之歌》，想必Maud之前也曾听过吧<br>
 不过今天<br>
 还是想和你聊聊这首歌。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[科技冷知识——可以“举人”的网站]]></title>
-        <id>https://dawnai.Github.io/post/lBnz2eiS_/</id>
-        <link href="https://dawnai.Github.io/post/lBnz2eiS_/">
-        </link>
-        <updated>2020-03-11T01:40:54.000Z</updated>
-        <summary type="html"><![CDATA[<p>这个网站可以生成“举牌小人”的图片，</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>这个网站可以生成“举牌小人”的图片，</p>
 ]]></content>
     </entry>
 </feed>
