@@ -64,7 +64,7 @@
           <img src="https://dawnai.Github.io/post-images/MbS3WujqE.png" alt="数据排序技巧——冒泡法和选择法" class="block w-full mb-8">
         
         <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2020-03-19 · 1 min read</div>
+          <div class="text-gray-400 text-sm mr-4">2020-03-19 · 2 min read</div>
           
             <a href="https://dawnai.Github.io/tag/aCc3uGXJh/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
               <i class="ri-hashtag"></i>
@@ -83,8 +83,23 @@
 冒泡法就是不断循环判断数组，然后选出最小的那个数据，作为第一个数据<br>
 之后，保持第一个数据不变，继续循环判断接下来的数据，然后再选出最小的那个数据，作为第二个数据<br>
 依次循环即可……<br>
-<img src="https://dawnai.Github.io/post-images/1584621276459.png" alt="" loading="lazy"></p>
-<p>用两个for循环就可以搞定！</p>
+<img src="https://dawnai.Github.io/post-images/1584621276459.png" alt="" loading="lazy"><br>
+用两个for循环就可以搞定！<br>
+有意思的不在这里，而在与数组传过去后，函数里面的“数组”不是数组，而是指针！<br>
+数据类型，是不一样的哟~<br>
+所以在形参中，只会分配一个内存地址，那c编译器为什么要这么做呢？</p>
+<!-- more -->答案显然就是提高运行速率，如果不采用指针的方式，c语言的优点就无法展现！
+<p>这也就引发了下一个议题：<br>
+形参写在函数上和写在函数内是一样的。区别就是具有对外的属性。<br>
+比如这样：<br>
+void p()<br>
+{<br>
+int a;<br>
+}<br>
+和这个：<br>
+void (int a)<br>
+{}<br>
+这两个是一样的。</p>
 
         </div>
         <!-- Share to Twitter, Weibo, Telegram -->
