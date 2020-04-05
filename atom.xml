@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-04-05T01:56:57.936Z</updated>
+    <updated>2020-04-05T03:34:43.749Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -16,6 +16,16 @@
         <link href="https://dawnai.Github.io/post/Ym_q0edhp/">
         </link>
         <updated>2020-04-05T01:51:08.000Z</updated>
+        <summary type="html"><![CDATA[<p>当我们在桌面新建一个文本文档，输入“联通”，然后保存退出，再打开，你会看到这样的画面：<br>
+<img src="https://dawnai.Github.io/post-images/1586051742872.png" alt="" loading="lazy"></p>
+<p>对的，联通成为了一串乱码，要想解释为什么，得从计算机的编码说起。<br>
+计算机内部使用晶体管的开合来表示0和1，为了让计算机知道这是字母还是数字，我们要制定一套规则，就像摩斯电码一样，数字对应字符，不同的数字对应不同的字符。这个就是编码。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>当我们在桌面新建一个文本文档，输入“联通”，然后保存退出，再打开，你会看到这样的画面：<br>
+<img src="https://dawnai.Github.io/post-images/1586051742872.png" alt="" loading="lazy"></p>
+<p>对的，联通成为了一串乱码，要想解释为什么，得从计算机的编码说起。<br>
+计算机内部使用晶体管的开合来表示0和1，为了让计算机知道这是字母还是数字，我们要制定一套规则，就像摩斯电码一样，数字对应字符，不同的数字对应不同的字符。这个就是编码。</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[原来这一天真的来了]]></title>
