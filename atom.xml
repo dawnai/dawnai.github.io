@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-03-22T07:56:24.368Z</updated>
+    <updated>2020-04-05T01:56:57.936Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[科技冷知识01 联通]]></title>
+        <id>https://dawnai.Github.io/post/Ym_q0edhp/</id>
+        <link href="https://dawnai.Github.io/post/Ym_q0edhp/">
+        </link>
+        <updated>2020-04-05T01:51:08.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[原来这一天真的来了]]></title>
         <id>https://dawnai.Github.io/post/gYD2u18EO/</id>
@@ -94,20 +101,5 @@
         <link href="https://dawnai.Github.io/post/xi/">
         </link>
         <updated>2020-03-13T13:35:33.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[夕阳之歌——梅艳芳]]></title>
-        <id>https://dawnai.Github.io/post/mei/</id>
-        <link href="https://dawnai.Github.io/post/mei/">
-        </link>
-        <updated>2020-03-12T14:26:54.000Z</updated>
-        <summary type="html"><![CDATA[<p>今天想给Maud分享一首歌，这首歌就是标题所写的——《夕阳之歌》，想必Maud之前也曾听过吧<br>
-不过今天<br>
-还是想和你聊聊这首歌。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>今天想给Maud分享一首歌，这首歌就是标题所写的——《夕阳之歌》，想必Maud之前也曾听过吧<br>
-不过今天<br>
-还是想和你聊聊这首歌。</p>
-]]></content>
     </entry>
 </feed>
