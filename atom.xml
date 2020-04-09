@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-04-05T03:48:39.983Z</updated>
+    <updated>2020-04-09T07:15:38.897Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[单片机的串行通信问题]]></title>
+        <id>https://dawnai.Github.io/post/F8nNlVgSY/</id>
+        <link href="https://dawnai.Github.io/post/F8nNlVgSY/">
+        </link>
+        <updated>2020-04-09T06:17:39.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[科技冷知识01 联通]]></title>
         <id>https://dawnai.Github.io/post/Ym_q0edhp/</id>
@@ -104,12 +111,5 @@
         <content type="html"><![CDATA[<p>不知道Dawn为什么突然想写这样一篇文章，可能是因为疫情原因，太久没有见到Maud，很想她<br>
 很担心Maud，与其说是担心，不如说是Dawn自己不自信吧，有时候总是忍不住去想Maud的Former，想着Maud是不是在和他聊天之类的……</p>
 ]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[喜提90分！]]></title>
-        <id>https://dawnai.Github.io/post/xi/</id>
-        <link href="https://dawnai.Github.io/post/xi/">
-        </link>
-        <updated>2020-03-13T13:35:33.000Z</updated>
     </entry>
 </feed>

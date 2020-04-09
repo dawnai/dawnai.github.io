@@ -4,37 +4,40 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>科技冷知识01 联通 - Dawn &amp;&amp; Maud</title>
+<title>单片机的串行通信问题 - Dawn &amp;&amp; Maud</title>
 <link rel="shortcut icon" href="https://dawnai.Github.io/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 <link rel="stylesheet" href="https://dawnai.Github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://dawnai.Github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="科技冷知识01 联通 - Dawn &amp;&amp; Maud - Atom Feed" href="https://dawnai.Github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="单片机的串行通信问题 - Dawn &amp;&amp; Maud - Atom Feed" href="https://dawnai.Github.io/atom.xml">
 
     
 
-  <meta name="description" content="当我们在桌面新建一个文本文档，输入“联通”，然后保存退出，再打开，你会看到这样的画面：
-
-对的，联通成为了一串乱码，要想解释为什么，得从计算机的编码说起。
-计算机内部使用晶体管的开合来表示0和1，为了让计算机知道这是字母还是数字，我们要制定..." />
-  <meta property="og:title" content="科技冷知识01 联通 - Dawn &amp;&amp; Maud">
-  <meta property="og:description" content="当我们在桌面新建一个文本文档，输入“联通”，然后保存退出，再打开，你会看到这样的画面：
-
-对的，联通成为了一串乱码，要想解释为什么，得从计算机的编码说起。
-计算机内部使用晶体管的开合来表示0和1，为了让计算机知道这是字母还是数字，我们要制定..." />
+  <meta name="description" content="要想理解这个问题，我们就得先知道计算机通信是什么？
+简单来说计算机通信就是计算机和计算机之间的交流，方式有很多，可以大致分为“串行通信”和“并行通信”
+并行通信：
+通常将数据字节的各位用多条数据线通信进行传送，有多少位，就要多少根数据线。
+..." />
+  <meta property="og:title" content="单片机的串行通信问题 - Dawn &amp;&amp; Maud">
+  <meta property="og:description" content="要想理解这个问题，我们就得先知道计算机通信是什么？
+简单来说计算机通信就是计算机和计算机之间的交流，方式有很多，可以大致分为“串行通信”和“并行通信”
+并行通信：
+通常将数据字节的各位用多条数据线通信进行传送，有多少位，就要多少根数据线。
+..." />
   <meta property="og:type" content="articles">
-  <meta property="og:url" content="https://dawnai.Github.io/post/Ym_q0edhp/" />
-  <meta property="og:image" content="https://dawnai.Github.io/post-images/Ym_q0edhp.jfif">
+  <meta property="og:url" content="https://dawnai.Github.io/post/F8nNlVgSY/" />
+  <meta property="og:image" content="https://dawnai.Github.io/post-images/F8nNlVgSY.jpg">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="科技冷知识01 联通 - Dawn &amp;&amp; Maud">
-  <meta name="twitter:description" content="当我们在桌面新建一个文本文档，输入“联通”，然后保存退出，再打开，你会看到这样的画面：
-
-对的，联通成为了一串乱码，要想解释为什么，得从计算机的编码说起。
-计算机内部使用晶体管的开合来表示0和1，为了让计算机知道这是字母还是数字，我们要制定...">
+  <meta name="twitter:title" content="单片机的串行通信问题 - Dawn &amp;&amp; Maud">
+  <meta name="twitter:description" content="要想理解这个问题，我们就得先知道计算机通信是什么？
+简单来说计算机通信就是计算机和计算机之间的交流，方式有很多，可以大致分为“串行通信”和“并行通信”
+并行通信：
+通常将数据字节的各位用多条数据线通信进行传送，有多少位，就要多少根数据线。
+...">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://dawnai.Github.io/post/Ym_q0edhp/">
+  <link rel="canonical" href="https://dawnai.Github.io/post/F8nNlVgSY/">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
@@ -52,52 +55,57 @@
     <div class="max-w-4xl w-full mx-auto">
       <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
         <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
-          科技冷知识01 联通
+          单片机的串行通信问题
         </h1>
         
-          <img src="https://dawnai.Github.io/post-images/Ym_q0edhp.jfif" alt="科技冷知识01 联通" class="block w-full mb-8">
+          <img src="https://dawnai.Github.io/post-images/F8nNlVgSY.jpg" alt="单片机的串行通信问题" class="block w-full mb-8">
         
         <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2020-04-05 · 6 min read</div>
+          <div class="text-gray-400 text-sm mr-4">2020-04-09 · 4 min read</div>
           
-            <a href="https://dawnai.Github.io/tag/dXfDqtuE7/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
+            <a href="https://dawnai.Github.io/tag/aCc3uGXJh/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
               <i class="ri-hashtag"></i>
-              科技冷知识
+              C语言
             </a>
           
         </div>
         <div class="markdown mb-8" v-pre>
-          <p>当我们在桌面新建一个文本文档，输入“联通”，然后保存退出，再打开，你会看到这样的画面：<br>
-<img src="https://dawnai.Github.io/post-images/1586051742872.png" alt="" loading="lazy"></p>
-<p>对的，联通成为了一串乱码，要想解释为什么，得从计算机的编码说起。<br>
-计算机内部使用晶体管的开合来表示0和1，为了让计算机知道这是字母还是数字，我们要制定一套规则，就像摩斯电码一样，数字对应字符，不同的数字对应不同的字符。这个就是编码。</p>
-<!-- more -->
-<p>早期人们用字节来表示基本存储单位，一个字节由8位二进制组成，因此，一个字节能表示2的8次方也就是256种字符，美国人就将自己的语言编写进入了计算机，数字加上24个英文字母及其大小写，还有一些特殊字符，一共也就才127个，所以，用一个字节就足够了。</p>
-<!-- more -->这样就能让计算机显示英文了，这种编码就是著名的ASCII码
-<p><img src="https://dawnai.Github.io/post-images/1586053806216.jfif" alt="" loading="lazy"><br>
-也被称为美国信息交换标准代码，解决了基本的字符显示问题，但是问题显而易见，这种编码只能适用于英文，其他语言怎么办？比如浩瀚的中文，又该怎么解决？<br>
-<img src="https://dawnai.Github.io/post-images/1586054034452.gif" alt="" loading="lazy"><br>
-办法显而易见，就是制定一套中文的编码规则 ，我国于1980年发布了《信息交换用汉字编码字符集》，序列号是GB-2312。这个字符集使用一到两个字节共同表示一个字符，其中编码了6763个常用汉字和682个全角的非汉字字符，并且按照汉字的使用频率将汉字分为两级，一级3755个，二级3008个，虽然这个编码很快流行于大陆，但是很显然，6763个汉字在浩瀚的汉字语言里还是太渺小了。<br>
-<img src="https://dawnai.Github.io/post-images/1586054603107.jfif" alt="" loading="lazy"><br>
-于是在1995年，我国又制定《汉字内码拓展规范》也就是GBK字符集，在GB-2312的基础上又添加了21003个汉字，后来，随着计算机的发展，少数民族也要用电脑了，于是我国再进行拓展，将GBK升级成为GB18030字符集，在GBK的基础上又添加了几千个少数民族的文字，同时GB18030向下兼容GBk，GB2312，ASCII，这样英文也可以在计算机中显示了。<br>
-问题也随之而来，GBK是双字节，ASCII是单字节，计算机怎么知道这个数据是单字节还是双字节的呢？</p>
-<!-- more -->原理很简单，前文说到了英文只有127种字符，因此在一个字节中是有129个空位的，所以00到7F有内容，而80到FF是空闲的，因此，我们规定当一个字符的范围在81~FE的时候，就是双字节数据，连着下一位数据按照GBK进行解析，否则就是单字节数据，用ASCII进行解析。
-<!-- more -->虽然这样解决了编码问题，但是问题仍然存在，很显然每个国家都有自己的编码方式，那么怎么进行沟通就成了大问题。试想一下，你打开一个日本的网站，里面全是乱码，心情是怎样的？![](https://dawnai.Github.io/post-images/1586055551960.jfif)
-<p>为了解决这个问题，国际标准化组织ISO决定制定一套全球通用的标准化字符集，1994年发布了第一套，也就是unicode标准，unicode为每一种语言设定了唯一并且统一的二进制编码，解决了跨平台和跨语言的交流障碍，那么unicode是怎么工作的呢？<br>
-<img src="https://dawnai.Github.io/post-images/1586055816017.gif" alt="" loading="lazy"><br>
-unicode使用十六进制数字，0~0x0010FFFF，也就是用了四个字节，四个字节能表示多少种类的字符呢？也就是2^23=4294967296，但是世界上现存的字符种类远远达不到这么多，现在只定义了238605个字符。<br>
-这就意味着unicode留下了大量的空白</p>
-<!-- more -->最高位的字节拆分为128个组，很显然，我们所使用的字符，都在第一个组内，也就是0组，再根据次高位的字节分为256个平面，每个平面再根据第三个字符的字节分成256个格子，每个格子再根据第四个字节分成256个小格子，我们的字符就存储再这些小格子里面，因此一个平面就可以存储256*256=65536个字符，因此世界语言有序分布在平面0,1,2,14,15,16里面但是平面15和平面16用于存放用户自己定义的符号区，比如各种表情符号😏😒😏☹️😠😔😦😵🤥👾🤖👏
-<!-- more -->unicode只是一种标准，但是实现这个标准可以有很多方式，比如UTF-8，就是unicode的存储-传输的编码方式，是一种可变长编码，可以是单字节双字节以及三字节或者多字节。
-<!-- more -->将unicode变成UTF-8就简单多了，参考这条规则就行：
-<p><img src="https://dawnai.Github.io/post-images/1586056854129.png" alt="" loading="lazy"><br>
-其中x就是需要转换的二进制，比如中国的“中”，在unicode中是0x4e2d，转换为二进制就是0100 1110 0010 1101，对应第三条规则，所以将x替换成二进制，变成：111001001011100010101101，转换为十六进制就是：0xe4b8ad，这就是“中”的UTF-8编码。<br>
-现在我们回到问题，为什么联通会显示为乱码呢？这是因为计算机默认的编码方式是ANSI<br>
-<img src="https://dawnai.Github.io/post-images/1586057363988.png" alt="" loading="lazy"><br>
-也就是计算机本地存储编码，在中国大陆，一般就是GBK编码。但是：<br>
-“联”的GBK编码是1100000110101010<br>
-“通”的GBK编码是1100110110101000<br>
-这恰恰是UTF-8的第二种形式，因此保存再打开，记事本会误以为这是UTF-8文件，但是在UTF-8中，这什么也不是。</p>
+          <p>要想理解这个问题，我们就得先知道计算机通信是什么？<br>
+简单来说计算机通信就是计算机和计算机之间的交流，方式有很多，可以大致分为“串行通信”和“并行通信”<br>
+并行通信：<br>
+通常将数据字节的各位用多条数据线通信进行传送，有多少位，就要多少根数据线。<br>
+优点：控制简单、传输速度快<br>
+缺点：由于传输线较多，长距离传送时成本高且接收方的各位同时接收存在困难<br>
+<img src="https://dawnai.Github.io/post-images/1586413474851.jpg" alt="" loading="lazy"></p>
+<p>串行通信：<br>
+是将数据字节分成一位一位的形式在一条传输线上逐个传送<br>
+优点：传输线少，长距离传输的时候成本低，且可以利用电话网等现成的设备<br>
+缺点：数据的传送控制比并行通信复杂得多<br>
+<img src="https://dawnai.Github.io/post-images/1586413480307.jfif" alt="" loading="lazy"></p>
+<p>我们的串口通信显然就是串行通信，将数据一位一位的放在数据线上面进行传输。串行通信旗下又有两种通信方式，也就是异步通信和同步通信。<br>
+顾名思义，异步通信就是指通信的发送与接收设备使用各自的的时钟控制数据的发送和接受过程。<br>
+为使双方的收发协调，要求发送和接收设备的时钟尽可能一致。<br>
+异步通信是以字符为单位进行传输，字符与字符之间的间隙（时间间隔）是任意的，<br>
+但每个字符中的各位是以固定的时间传送的，即字符之间不一定有“位间隔”<br>
+的整数倍的关系，但同一字符内的各位之间的距离均为“位间隔”的整数倍。<img src="https://dawnai.Github.io/post-images/1586413983628.jpg" alt="" loading="lazy"><br>
+问题也随之而来，因为不要求接收和发送方使用同一时钟，所以计算机为了搞清楚何时该接受何时该发送，就要添加两到三个“附加位”，也就是“起始位”“校验位”“停止位”这就导致效率比较低，但是经济性好呀！</p>
+<p>现在我们继续来说说什么是“同步通信”？<br>
+同步通信显然和异步通信相反，要求同步通信时要建立发送方时钟对接收方时钟的直接控制，使双方达到完全同步。此时传输数据的位之间的距离均为“位间隔”的整数倍，同时传送的字符间不留间隙，也就是保持位同步关系，也保持字符同步关系。（有点紧哈）<br>
+发送方对接收方的同步可以通过两种方法实现。也就是外同步和自同步。（我们单片机一般用异步通信哈）<br>
+<img src="https://dawnai.Github.io/post-images/1586414538086.jfif" alt="" loading="lazy"></p>
+<p>关于传输方向也没什么好说的，全双工，半双工，单工。重点是奇偶校验。<br>
+奇校验时，数据中“1”的个数与校验位“1”的个数之和应为奇数；偶校验时，数据中“1”的个数<br>
+与校验位“1”的个数之和应为偶数。原理很简单嘛，但是怎么用啊?<br>
+这里需要用到ACC这个累加器：<br>
+ACC=SUBF，将接受到的数据传给ACC，如果其中有奇数个1那么标志位P=1；否则P=0。<br>
+显然，我们需要手动改变RB8和TB8中的数据，但是记住，RB8中的数据其实来自于TB8，所以更改TB8即可<br>
+假设我们采用奇校验，接受数据01001110，显然，这里面只有4个1（偶数），所以我们需要将发送方的TB8赋值1，现在传输完成了，现在我们把SUBF中的数据给ACC，但是SUBF中的数据是8位，没有包括校验位，如果P=0，那么说明SUBF中的数据的1的个数为偶数，那么传输正确！<br>
+所以加上条件：<br>
+if(P!=RB8)<br>
+{<br>
+//数据传输成功！<br>
+}</p>
+<p>但是需要注意，奇偶校验的成功率其实只有50%，因为一旦发生偶数个数据更改，是检测不出来的，但是由于奇偶校验简单实用，而运用到了现在。</p>
 
         </div>
         <!-- Share to Twitter, Weibo, Telegram -->
