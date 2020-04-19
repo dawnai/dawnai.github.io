@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-04-16T08:34:45.472Z</updated>
+    <updated>2020-04-19T14:34:54.154Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[孤独的对白——GHiGGA7]]></title>
+        <id>https://dawnai.Github.io/post/lNW4LYlk9/</id>
+        <link href="https://dawnai.Github.io/post/lNW4LYlk9/">
+        </link>
+        <updated>2020-04-19T14:31:21.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Muad的随笔]]></title>
         <id>https://dawnai.Github.io/post/IuHfFXLL0/</id>
@@ -102,12 +109,5 @@
         <content type="html"><![CDATA[<p>今天开设一个专栏，隔三差五分享一些科技圈的冷知识，分享一些当下最新的“冷科学”，或者对一些科技圈的产品做一些点评，不吐槽，也不毒舌，安静分享知识~</p>
 <p>今天之所以想起做这个栏目，是因为在前天看到b站毕导的视频，里面详细介绍了为什么乌鸦喝水的故事是假的？<img src="https://dawnai.Github.io/post-images/1584438195463.gif" alt="" loading="lazy"></p>
 ]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分享一个Maud的创作]]></title>
-        <id>https://dawnai.Github.io/post/1a-_3Di9R/</id>
-        <link href="https://dawnai.Github.io/post/1a-_3Di9R/">
-        </link>
-        <updated>2020-03-17T07:45:56.000Z</updated>
     </entry>
 </feed>
