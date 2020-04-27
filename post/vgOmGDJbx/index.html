@@ -4,55 +4,31 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>数组做参数问题 - Dawn &amp;&amp; Maud</title>
+<title>计算机也要画画 - Dawn &amp;&amp; Maud</title>
 <link rel="shortcut icon" href="https://dawnai.Github.io/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 <link rel="stylesheet" href="https://dawnai.Github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://dawnai.Github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="数组做参数问题 - Dawn &amp;&amp; Maud - Atom Feed" href="https://dawnai.Github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="计算机也要画画 - Dawn &amp;&amp; Maud - Atom Feed" href="https://dawnai.Github.io/atom.xml">
 
     
 
-  <meta name="description" content="数组做参数，会退化为指针，因为之前我也曾经了解过这个，数组其实是特殊的指针
-
-我以前习惯这样：
-void shuzhu(int a[10])
-{
-printf(&amp;quot;%d&amp;quot;,a[0]);
-}
-void main()
-{
-in..." />
-  <meta property="og:title" content="数组做参数问题 - Dawn &amp;&amp; Maud">
-  <meta property="og:description" content="数组做参数，会退化为指针，因为之前我也曾经了解过这个，数组其实是特殊的指针
-
-我以前习惯这样：
-void shuzhu(int a[10])
-{
-printf(&amp;quot;%d&amp;quot;,a[0]);
-}
-void main()
-{
-in..." />
+  <meta name="description" content="咱们尝试让计算机自己画画！
+" />
+  <meta property="og:title" content="计算机也要画画 - Dawn &amp;&amp; Maud">
+  <meta property="og:description" content="咱们尝试让计算机自己画画！
+" />
   <meta property="og:type" content="articles">
-  <meta property="og:url" content="https://dawnai.Github.io/post/7qHZ4itZh/" />
-  <meta property="og:image" content="https://dawnai.Github.io/post-images/7qHZ4itZh.jfif">
+  <meta property="og:url" content="https://dawnai.Github.io/post/vgOmGDJbx/" />
+  <meta property="og:image" content="https://dawnai.Github.io/post-images/vgOmGDJbx.png">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="数组做参数问题 - Dawn &amp;&amp; Maud">
-  <meta name="twitter:description" content="数组做参数，会退化为指针，因为之前我也曾经了解过这个，数组其实是特殊的指针
-
-我以前习惯这样：
-void shuzhu(int a[10])
-{
-printf(&amp;quot;%d&amp;quot;,a[0]);
-}
-void main()
-{
-in...">
+  <meta name="twitter:title" content="计算机也要画画 - Dawn &amp;&amp; Maud">
+  <meta name="twitter:description" content="咱们尝试让计算机自己画画！
+">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://dawnai.Github.io/post/7qHZ4itZh/">
+  <link rel="canonical" href="https://dawnai.Github.io/post/vgOmGDJbx/">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
@@ -70,51 +46,17 @@ in...">
     <div class="max-w-4xl w-full mx-auto">
       <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
         <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
-          数组做参数问题
+          计算机也要画画
         </h1>
         
-          <img src="https://dawnai.Github.io/post-images/7qHZ4itZh.jfif" alt="数组做参数问题" class="block w-full mb-8">
+          <img src="https://dawnai.Github.io/post-images/vgOmGDJbx.png" alt="计算机也要画画" class="block w-full mb-8">
         
         <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2020-03-20 · 1 min read</div>
-          
-            <a href="https://dawnai.Github.io/tag/aCc3uGXJh/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
-              <i class="ri-hashtag"></i>
-              C语言
-            </a>
+          <div class="text-gray-400 text-sm mr-4">2020-04-20 · 1 min read</div>
           
         </div>
         <div class="markdown mb-8" v-pre>
-          <p>数组做参数，会退化为指针，因为之前我也曾经了解过这个，数组其实是特殊的指针</p>
-<!-- more -->
-<p>我以前习惯这样：<br>
-void shuzhu(int a[10])<br>
-{<br>
-printf(&quot;%d&quot;,a[0]);<br>
-}<br>
-void main()<br>
-{<br>
-int number[]={12,212,1,2,12,12,1};<br>
-shuzhu(number);<br>
-}</p>
-<!-- more -->也就是在函数声明的时候，定义一个有一定范围的数组，但是这个程序显然不严谨，一旦原数组超过限定值，就会出bug，所以正确做法是添加一个sizeof函数
-<p>int num=0;<br>
-void shuzhu(int a[]，num)<br>
-{<br>
-printf(&quot;%d&quot;,a[0]);<br>
-}<br>
-void main()<br>
-{<br>
-int number[]={12,212,1,2,12,12,1};<br>
-num=sizeof(number)/sizeof(number[0]);<br>
-shuzhu(number,num);<br>
-}</p>
-<!-- more -->
-<p>甚至还可以这样：<br>
-void shuzhu(int *p,num);<br>
-直接定义一个指针，是同样的道理</p>
-<p>所以结论如下：<br>
-1.把数组的首内存地址和数组的有效长度传给调用函数即可。</p>
+          <p>咱们尝试让计算机自己画画！</p>
 
         </div>
         <!-- Share to Twitter, Weibo, Telegram -->
