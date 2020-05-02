@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-04-27T03:56:37.147Z</updated>
+    <updated>2020-05-02T12:48:04.465Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[XMind 论述思维导图]]></title>
+        <id>https://dawnai.Github.io/post/CPI6zneHc/</id>
+        <link href="https://dawnai.Github.io/post/CPI6zneHc/">
+        </link>
+        <updated>2020-05-02T12:34:52.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[计算机也要画画]]></title>
         <id>https://dawnai.Github.io/post/vgOmGDJbx/</id>
@@ -96,12 +103,5 @@
         <link href="https://dawnai.Github.io/post/MbS3WujqE/">
         </link>
         <updated>2020-03-19T12:19:48.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[第一本书《这不就是C语言嘛》正式完稿！]]></title>
-        <id>https://dawnai.Github.io/post/wjMx_eLFy/</id>
-        <link href="https://dawnai.Github.io/post/wjMx_eLFy/">
-        </link>
-        <updated>2020-03-18T08:59:27.000Z</updated>
     </entry>
 </feed>
