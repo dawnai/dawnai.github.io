@@ -4,28 +4,43 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>C语言——struct解析 - Dawn &amp;&amp; Maud</title>
+<title>世间情动 - Dawn &amp;&amp; Maud</title>
 <link rel="shortcut icon" href="https://dawnai.Github.io/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 <link rel="stylesheet" href="https://dawnai.Github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://dawnai.Github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="C语言——struct解析 - Dawn &amp;&amp; Maud - Atom Feed" href="https://dawnai.Github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="世间情动 - Dawn &amp;&amp; Maud - Atom Feed" href="https://dawnai.Github.io/atom.xml">
 
     
 
-  <meta name="description" content="以前练习C语言的时候没有很重视struct结构类型的学习，当时自己还是太年轻了，居然认为结构没有太大作用，也是，自己当初编写的游戏都还是简单横版闯关类的游戏，远远没有到达涉及到复杂数据结构的境界，如今学习数据结构，发现好多知识点都是建立在s..." />
-  <meta property="og:title" content="C语言——struct解析 - Dawn &amp;&amp; Maud">
-  <meta property="og:description" content="以前练习C语言的时候没有很重视struct结构类型的学习，当时自己还是太年轻了，居然认为结构没有太大作用，也是，自己当初编写的游戏都还是简单横版闯关类的游戏，远远没有到达涉及到复杂数据结构的境界，如今学习数据结构，发现好多知识点都是建立在s..." />
+  <meta name="description" content="世间情动，不过盛夏白瓷梅子汤，碎冰碰壁当啷响。
+世间情劫，不过三九黑瓦黄连鲜，糖心落低苦作言。
+世间执念，不过隆冬弱水千层冰，斧砸锹凿不能移。
+-出自《穆玄英挂帅》
+
+..." />
+  <meta property="og:title" content="世间情动 - Dawn &amp;&amp; Maud">
+  <meta property="og:description" content="世间情动，不过盛夏白瓷梅子汤，碎冰碰壁当啷响。
+世间情劫，不过三九黑瓦黄连鲜，糖心落低苦作言。
+世间执念，不过隆冬弱水千层冰，斧砸锹凿不能移。
+-出自《穆玄英挂帅》
+
+..." />
   <meta property="og:type" content="articles">
-  <meta property="og:url" content="https://dawnai.Github.io/post/DSWPcYccL/" />
-  <meta property="og:image" content="https://dawnai.Github.io/images/avatar.png">
+  <meta property="og:url" content="https://dawnai.Github.io/post/FyoWk1cDW/" />
+  <meta property="og:image" content="https://dawnai.Github.io/post-images/FyoWk1cDW.png">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="C语言——struct解析 - Dawn &amp;&amp; Maud">
-  <meta name="twitter:description" content="以前练习C语言的时候没有很重视struct结构类型的学习，当时自己还是太年轻了，居然认为结构没有太大作用，也是，自己当初编写的游戏都还是简单横版闯关类的游戏，远远没有到达涉及到复杂数据结构的境界，如今学习数据结构，发现好多知识点都是建立在s...">
+  <meta name="twitter:title" content="世间情动 - Dawn &amp;&amp; Maud">
+  <meta name="twitter:description" content="世间情动，不过盛夏白瓷梅子汤，碎冰碰壁当啷响。
+世间情劫，不过三九黑瓦黄连鲜，糖心落低苦作言。
+世间执念，不过隆冬弱水千层冰，斧砸锹凿不能移。
+-出自《穆玄英挂帅》
+
+...">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://dawnai.Github.io/post/DSWPcYccL/">
+  <link rel="canonical" href="https://dawnai.Github.io/post/FyoWk1cDW/">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
@@ -43,45 +58,21 @@
     <div class="max-w-4xl w-full mx-auto">
       <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
         <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
-          C语言——struct解析
+          世间情动
         </h1>
         
+          <img src="https://dawnai.Github.io/post-images/FyoWk1cDW.png" alt="世间情动" class="block w-full mb-8">
+        
         <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2020-05-09 · 2 min read</div>
-          
-            <a href="https://dawnai.Github.io/tag/aCc3uGXJh/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
-              <i class="ri-hashtag"></i>
-              C语言
-            </a>
+          <div class="text-gray-400 text-sm mr-4">2020-05-12 · 1 min read</div>
           
         </div>
         <div class="markdown mb-8" v-pre>
-          <p>以前练习C语言的时候没有很重视struct结构类型的学习，当时自己还是太年轻了，居然认为结构没有太大作用，也是，自己当初编写的游戏都还是简单横版闯关类的游戏，远远没有到达涉及到复杂数据结构的境界，如今学习数据结构，发现好多知识点都是建立在struct上面得到，以及动态分配内存（malloc），确实不应该啊……<br>
-现在，我就来重新温习一下struct结构：<br>
-struct book {<br>
-char name[100];<br>
-char title[100];<br>
-};<br>
-这就是一个简单的结构体声明，我现在声明了一个book类型的变量，但是我要想用它，还需要这样做：<br>
-struct book books[10];//现在声明了10本书，每一本书都有name以及标题<br>
-strcpy(books[0].name,&quot;dawn&quot;);//对其中的数据进行赋值，用“.”</p>
-<p>但是每一次都需要写一下struct也太麻烦了，所以我们尝尝这样用：<br>
-typedef struct book {<br>
-char name[100];<br>
-char title[100];<br>
-} list;<br>
-运用到typedef就简单多了</p>
-<p>list books[10];<br>
-strcpy(books[0].name,&quot;dawn&quot;);//对其中的数据进行赋值，用“.”<br>
-这样也可以达到同样的效果，但是在实际运用中，我们常常要用到指针的结构：<br>
-typedef struct book {<br>
-char name[100];<br>
-char title[100];<br>
-} list，*set;</p>
-<p>list books[10];<br>
-strcpy(books[0].name,&quot;dawn&quot;);<br>
-set p=books;<br>
-printf(&quot;%s&quot;,p-&gt;name);//注意指针的修改要用到-&gt;即可。</p>
+          <p>世间情动，不过盛夏白瓷梅子汤，碎冰碰壁当啷响。</p>
+<p>世间情劫，不过三九黑瓦黄连鲜，糖心落低苦作言。</p>
+<p>世间执念，不过隆冬弱水千层冰，斧砸锹凿不能移。<br>
+-出自《穆玄英挂帅》</p>
+<!-- more -->
 
         </div>
         <!-- Share to Twitter, Weibo, Telegram -->
