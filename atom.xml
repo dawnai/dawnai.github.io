@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-06-15T14:43:06.249Z</updated>
+    <updated>2020-06-18T14:18:43.226Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[无题]]></title>
+        <id>https://dawnai.Github.io/post/tirg9dAND/</id>
+        <link href="https://dawnai.Github.io/post/tirg9dAND/">
+        </link>
+        <updated>2020-06-18T14:16:10.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[毕竟上坡路总是最累的]]></title>
         <id>https://dawnai.Github.io/post/H8q-dY0p9/</id>
@@ -92,12 +99,5 @@
         <link href="https://dawnai.Github.io/post/Hd-j2e6wJ/">
         </link>
         <updated>2020-04-09T07:16:16.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[单片机的串行通信问题]]></title>
-        <id>https://dawnai.Github.io/post/F8nNlVgSY/</id>
-        <link href="https://dawnai.Github.io/post/F8nNlVgSY/">
-        </link>
-        <updated>2020-04-09T06:17:39.000Z</updated>
     </entry>
 </feed>
