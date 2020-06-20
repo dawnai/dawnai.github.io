@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-06-19T14:18:22.696Z</updated>
+    <updated>2020-06-20T08:28:26.615Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[school]]></title>
+        <id>https://dawnai.Github.io/post/zlGjLlawl/</id>
+        <link href="https://dawnai.Github.io/post/zlGjLlawl/">
+        </link>
+        <updated>2020-06-20T08:27:43.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[海报]]></title>
         <id>https://dawnai.Github.io/post/k9OVUwOzK/</id>
@@ -82,22 +89,5 @@
         <link href="https://dawnai.Github.io/post/lNW4LYlk9/">
         </link>
         <updated>2020-04-19T14:31:21.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Muad的随笔]]></title>
-        <id>https://dawnai.Github.io/post/IuHfFXLL0/</id>
-        <link href="https://dawnai.Github.io/post/IuHfFXLL0/">
-        </link>
-        <updated>2020-04-16T08:08:43.000Z</updated>
-        <summary type="html"><![CDATA[<p>封面是Maud设计的一个标志，《栖山集》，背景是绿色的树叶，加上白色简约的字体，左下角加上字符：以翠绿的形式钻出地面，由于Maud没有具体解释这个标志的含义，所以Dawn也只能大慨猜出一二，以非专业的角度对这个作品进行一些解读。</p>
-<!-- more -->首先，设计最注重的就是“第一感”，人们往往留意那些显著的地方，会不自觉地把注意力留在画面中最显著的部分。关于Maud的这个作品，我第一眼就看到了那个“栖”字，这想必也是Maud特意设计的，在“栖”字中加入山水花草的剪影，给人一种“采菊东篱下，悠然见南山”的闲适，整体采用白色字体，用白色将其与背景色分隔开，突出显示字体，抓住人们的眼球，吸引人们进一步探索，同时暗绿色的背景，强调了分层，使得整个画面具备了层次感，不再那么单调。同时文字边框的使用进一步加强了字体的显著性。
-<!-- more -->如果你问我，这副作品最吸引我的地方在哪里，我会说，大概就是树叶吧，一千个人就会有一千个哈姆雷特，我之所以会喜欢背景的树叶，因为这个作品让我想起另一副图。
-<figure data-type="image" tabindex="1"><img src="https://dawnai.Github.io/post-images/1587026051280.jpg" alt="" loading="lazy"></figure>
-]]></summary>
-        <content type="html"><![CDATA[<p>封面是Maud设计的一个标志，《栖山集》，背景是绿色的树叶，加上白色简约的字体，左下角加上字符：以翠绿的形式钻出地面，由于Maud没有具体解释这个标志的含义，所以Dawn也只能大慨猜出一二，以非专业的角度对这个作品进行一些解读。</p>
-<!-- more -->首先，设计最注重的就是“第一感”，人们往往留意那些显著的地方，会不自觉地把注意力留在画面中最显著的部分。关于Maud的这个作品，我第一眼就看到了那个“栖”字，这想必也是Maud特意设计的，在“栖”字中加入山水花草的剪影，给人一种“采菊东篱下，悠然见南山”的闲适，整体采用白色字体，用白色将其与背景色分隔开，突出显示字体，抓住人们的眼球，吸引人们进一步探索，同时暗绿色的背景，强调了分层，使得整个画面具备了层次感，不再那么单调。同时文字边框的使用进一步加强了字体的显著性。
-<!-- more -->如果你问我，这副作品最吸引我的地方在哪里，我会说，大概就是树叶吧，一千个人就会有一千个哈姆雷特，我之所以会喜欢背景的树叶，因为这个作品让我想起另一副图。
-<figure data-type="image" tabindex="1"><img src="https://dawnai.Github.io/post-images/1587026051280.jpg" alt="" loading="lazy"></figure>
-]]></content>
     </entry>
 </feed>
