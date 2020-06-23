@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-06-20T14:19:31.827Z</updated>
+    <updated>2020-06-23T12:33:20.190Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[这样的提示框 怎么不吸引人呢？]]></title>
+        <id>https://dawnai.Github.io/post/BK9i_xPfl/</id>
+        <link href="https://dawnai.Github.io/post/BK9i_xPfl/">
+        </link>
+        <updated>2020-06-23T12:32:06.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[school]]></title>
         <id>https://dawnai.Github.io/post/zlGjLlawl/</id>
@@ -82,12 +89,5 @@
         <link href="https://dawnai.Github.io/post/CPI6zneHc/">
         </link>
         <updated>2020-05-02T12:34:52.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[孤独的对白——GHiGGA7]]></title>
-        <id>https://dawnai.Github.io/post/lNW4LYlk9/</id>
-        <link href="https://dawnai.Github.io/post/lNW4LYlk9/">
-        </link>
-        <updated>2020-04-19T14:31:21.000Z</updated>
     </entry>
 </feed>
