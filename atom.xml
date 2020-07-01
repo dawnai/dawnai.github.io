@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dawnai.Github.io</id>
     <title>Dawn &amp;&amp; Maud</title>
-    <updated>2020-06-23T12:33:20.190Z</updated>
+    <updated>2020-07-01T05:24:27.632Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dawnai.Github.io"/>
     <link rel="self" href="https://dawnai.Github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dawnai.Github.io/images/avatar.png</logo>
     <icon>https://dawnai.Github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dawn &amp;&amp; Maud</rights>
+    <entry>
+        <title type="html"><![CDATA[学？玩？]]></title>
+        <id>https://dawnai.Github.io/post/uGQTH-sS_/</id>
+        <link href="https://dawnai.Github.io/post/uGQTH-sS_/">
+        </link>
+        <updated>2020-07-01T05:19:16.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[这样的提示框 怎么不吸引人呢？]]></title>
         <id>https://dawnai.Github.io/post/BK9i_xPfl/</id>
@@ -82,12 +89,5 @@
         <link href="https://dawnai.Github.io/post/mZJps7igv/">
         </link>
         <updated>2020-05-08T06:52:44.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[XMind 论述思维导图]]></title>
-        <id>https://dawnai.Github.io/post/CPI6zneHc/</id>
-        <link href="https://dawnai.Github.io/post/CPI6zneHc/">
-        </link>
-        <updated>2020-05-02T12:34:52.000Z</updated>
     </entry>
 </feed>
